@@ -5,11 +5,7 @@ import numpy as np
 
 protopath = "MobileNetSSD_deploy.prototxt"
 modelpath = "MobileNetSSD_deploy.caffemodel"
-detector = cv2.dnn.readNetFromCaffe(prototxt=protopath, caffeModel=modelpath)
-# Only enable it if you are using OpenVino environment
-# detector.setPreferableBackend(cv2.dnn.DNN_BACKEND_INFERENCE_ENGINE)
-# detector.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
-
+detector = cv2.dnn.readNetFromCaffe(prototxt=protopath, caffeModel=modelpath
 
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
            "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
