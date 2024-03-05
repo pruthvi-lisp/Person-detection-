@@ -9,7 +9,6 @@ modelpath = "MobileNetSSD_deploy.caffemodel"
 detector = cv2.dnn.readNetFromCaffe(prototxt=protopath, caffeModel=modelpath)
 
 
-
 CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
            "bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
            "dog", "horse", "motorbike", "person", "pottedplant", "sheep",
